@@ -16,9 +16,10 @@
 // To get it working, don't worry about efficiency. Later we'll learn about specialized data structures that make this simpler/efficient.
 
 function intersection(a, b){
-  return(
-    // replace this line with your code
-  );
+  // This isn't efficent because it requires looping b multiple times 
+  // for a total runtime of O(n^2)
+  // but it fits challenge of being a one-liner
+  return(a.filter(x => b.includes(x)));
 }
 
 module.exports = intersection;
